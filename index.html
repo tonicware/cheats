@@ -1,519 +1,304 @@
+<!DOCTYPE html>
 <html>
-
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The best csgo external cheats on the market, for absolutely free!">
 <meta property="og:image" content="https://github.com/tonicware/tonicware-github.com/blob/master/tonicwaress2.png?raw=true">
 <meta name="author" content="Tonic">
 <meta name="keywords" content="CSGO, counter strike, cheats, csgo cheats, csgo wallhacks, wallhacks, esp, csgo triggerbot, csgo bhop, bhop, tonicware, TonicWare">
-<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Krub|Major+Mono+Display" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
-<link rel="icon" href="https://github.com/tonicware/cheats/blob/master/tonicwareicon.png?raw=true">
-<title>TonicWare</title>
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<title>Sippin' Tonic</title>
 <style>
 * {box-sizing: border-box;}
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-  
+    
 a {
-  border: 0px;
-  cursor: pointer;
+    border: 0px;
 }
-
-button {
-  outline:none;
+body { 
+    margin: 0;
+    background-color: #0f1014;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-button:hover {
-cursor: pointer;
-
-}
-
 
 .header {
-  overflow: hidden;
-  top: 0;
-  z-index: 100;
-  background-color: #171c23;
-  padding: 4px 55px;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    background-color: transparent;
+    padding: 30px 20px;
+    position: fixed;
+    width: 100%;
 }
 
 .header a {
-  z-index: 2;
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 15px;
-  line-height: 25px;
-  border-radius: 4px;
-  font-family: 'Major Mono Display', monospace;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px; 
+    line-height: 25px;
+    border-radius: 4px;
 }
 
 .header a.logo {
-  font-size: 20px;
-  font-family: 'Muli', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-family: 'Questrial', sans-serif;
 }
 
 .header a:hover {
-  color: #2ad747;
+    color: #2ad747;
 }
 
-.header a:focus {
-  color: #2ad747;
+.header a.active {
+
 }
 
 .header-right {
-  float: right;
+    float: right;
 }
 
 @media screen and (max-width: 500px) {
   .header a {
-    float: none;
-    display: block;
-    text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
   }
   
   .header-right {
-    float: none;
+        float: none;
   }
 }
-  
-.homediv {
- background-repeat: no-repeat;
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
- padding-top: 10px;
- width: 100%;
- height: 475px;
- background-image: url("https://github.com/tonicware/cheats/blob/master/websitebg.png?raw=true");
+    
+  .forefront-element {
+    -webkit-transform: translateZ(999px) scale(.7);
+    transform: translateZ(999px) scale(.7);
+    z-index: 1;
+  }
+
+  .base-element {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .background-element {
+    -webkit-transform: translateZ(-999px) scale(2);
+    transform: translateZ(-999px) scale(2);
+    z-index: 3;
+  }
+    
+.div1 {
+    background-image: url('bg.jpg');
+      background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+      background-size: cover;
 }
-
-
-
- .div1 {
- padding-top: 100px;
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 400px;
- background-color: #171c23;
-  
-}
-  
+    
 .div2 {
- padding-top: 100px;
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 1500px;
- background-image: url("https://raw.githubusercontent.com/tonicware/tonicware-github.com/master/background3.png")
-  
+    background-color: #0f1014;
+    height: 600px;
+    width: 100%;
+    background-image: url('websiteproof.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+    
 .div3 {
- padding-top: 100px;
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 900px;
- background-color: #171c23;
-  
-}  
-
-.div4 {
- padding-top: 100px;
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 410px;
- background-image: url("https://github.com/tonicware/tonicware-github.com/blob/master/background4.png?raw=true")
-  
-}  
-
-.div5 {
- padding-top: 100px;
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 410px;
- background-color: #7289da;
-  
-}  
-  
-.div6 {
- padding-top: 100px;
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 450px;
- background-color: #171c23;
-  
-}  
+    background-color: #0f1014;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 2300px;
+    width: 100%;        
+}
 
 .footer {
- padding-left: 55px;
- padding-right: 55px;
- width: 100%;
- height: 20px;
- background-color: #3d3d3d;
-  
-}  
-
-.footertext {
-  color: white;
-  font-size: 15px;
-  font-family: 'Muli', sans-serif;
+    height: 100px;
+    width: 100%;
+    background-color: 
 }
 
-
-
+.lineunderline {
+    width: 60px;
+    height: 2px;
+    background-color: white;
+}
+    
 .title {
-  color: white;
-  font-size: 100px;
-  font-family: 'Muli', sans-serif;
-  
+    color: white;
+    font-size: 100px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
 }
-  
+
+.caption {
+        color: #d8d8d8;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+    
+.smalltitle {
+    color: #636363;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.mediumtitle {
+    color: white;
+    font-size: 30px;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+}
+    
 .learnmore {
-  z-index: 1;
-  background-color: #2ad747;
-  font-family: 'Muli', sans-serif;
-  color: white;
-  font-size: 19px;
-  border-radius: 10px;
-  border: 0px;
-  padding: 9px;
-  padding-left: 30px;
-  padding-right: 30px;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 0px;
+    background-color: #2ad747;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
-  
-.learnmore:hover, .learnmore:focus, .learnmore:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    
+.list {
+    color: #636363;
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
 }
-
-.divtext {
-  color: white;
-  font-size: 23px;
-  font-family: 'Roboto', sans-serif;
+    
+img {
+    border-radius: 10px;
 }
-
-.divtitle {
-  color: white;
-  font-size: 50px;
-  font-family: 'Major Mono Display', monospace;
-  font-family: 'Krub', sans-serif;
-}
-  
-.divtitlegreen {
-  color: #2ad747;
-  font-size: 50px;
-  font-family: 'Major Mono Display', monospace;
-  font-family: 'Krub', sans-serif;
-}
-  
-.div75 {
-  padding: 10px;
-  width: 650px;
-  height: 300px;
-}
-
-.container {
-  float: left;
-  width: 280px;
-  height: 280px;
-}
-
-.spacer {
-  width: 70px;
-  float: left;
-  opacity: 0;
-}
-  
-  
-.featuretitle {
-  color: white;
-  font-size: 35px;
-  font-family: 'Muli', sans-serif;
-  
-}
-
-.featuretext {
-  color: #e8e8e8;
-  font-size: 20px;
-  font-family: 'Muli', sans-serif;
-  
-}
-  
-  
-.img {
-  border-radius: 10px;
-
-}
-  
-  
-.score {
-  border-radius: 10px;
-  border: 0px;
-  background-color: Transparent;
-}
-
-.divsmall {
-  color: #f2f2f2;
-  font-size: 17px;
-  font-family: 'Muli', sans-serif;
-  
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.invite {
-  border-radius: 20px;
-  border: 0px;
-}
-
-.divpadding {
-  padding-top: 9px;
-} 
-
-.invitebutton {
-  border-radius: 5px;
-  background-color: #667ed1;
-  border: 2px solid white;
-  padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  color: white;
-  font-size: 30px;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-  
-.invitebutton:hover, .invitebutton:focus, .invitebutton:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.format {
-  height: 100px;
-  padding-top: 35px;
-  padding-left: 10px;
-  padding-right: 100px;
-  
-}
-
-.carry {
-  width: 100%;
-}
-  
-.divbutton {
-  width: 50%;
-  padding: 10px;
-  height: 120px;
-  border-radius: 10px;
-  border: 2px solid white;
-  background-color: #667ed1;
-  
+    
+.discord {
+    border-radius: 10px;
+    border: 0px;
+    background-color: #686868;
 }
 </style>
-  
 </head>
-
 <body>
-  
+
 <div class="header">
-  <a href="#home"><img src="https://github.com/tonicware/cheats/blob/master/newlogo.png?raw=true" width="66px" height="22px"></a>
-  <div class="header-right">
-    <a href="#home">home</a>
-    <a href="#about">info</a>
-    <a href="#features">features</a>
-    <a href="#screenshots">screenshots</a>
-    <a href="#viruscheck">virustotal</a>
-    <a href="#download">download</a>
-    <a href="#tutorial">tutorial</a>
-  </div>
-</div>
-<br>
- <br>
-  <br>
-<div class="homediv" id="home">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <center><font class="title">TonicWare</font></center>
-  <center><a href="#about"><button class="learnmore">Learn More</button></a></center>
-</div>
-<div class="div1" id="about">
-  <font class="divtitlegreen">TonicWare</font><font class="divtitle"> Information</font>
-  <br>
-  <font class="divtext">TonicWare is an external free cheat made for csgo. With a wide range of features and a great community, TonicWare is the ideal option for any casual cheater. TonicWare is easy to use and setup, with very frequent updates.</font>
-</div>
-<div class="div2" id="features">
-  <center>
-    <font class="divtitle">Features</font>
-    <div class="div75">
-      <div class="container">
-        <font class="featuretitle">ESP (Wallhacks)</font>
-        <br>
-        <font class="featuretext">Glow everyone on the map.<br>Features<br>Change who is glowed, change esp colour when enemy is scoped, Health esp and static, Change glow colour.</font>
-      </div>
-      <div class="spacer">
-        <p>a</p>
-      </div>
-      <div class="container">
-        <font class="featuretitle">No Recoil</font>
-        <br>
-        <font class="featuretext">Finding spray control hard?<br>Combat recoil and make your gun into a laser with No Recoil.</font>
-      </div>
+    <a href="#home" class="logo">T O N I C W A R E</a>
+    <div class="header-right">
+        <a href="#download" class="logo">D O W N L O A D</a>   
     </div>
-    <br>
-     <div class="div75">
-      <div class="container">
-        <font class="featuretitle">Bhop</font>
-        <br>
-        <font class="featuretext">Can't seem to hit that bhop perfectly?<br>Bhop allows you to travel across the map way faster than normal.</font>
-      </div>
-      <div class="spacer">
-        <p>a</p>
-      </div>
-      <div class="container">
-        <font class="featuretitle">No Flash</font>
-        <br>
-        <font class="featuretext">Flashes are a thing of the past.<br>With no flash, flashes will never bother you again letting you catch that awper off guard as he flash peeks.</font>
-      </div>
-    </div>
-      <br>
-       
-            
-      <div class="div75">
-      <div class="container">
-        <font class="featuretitle">Radar</font>
-        <br>
-        <font class="featuretext">See where everyone is on the map.</font>
-      </div>
-      <div class="spacer">
-        <p>a</p>
-      </div>
-      <div class="container">
-         <font class="featuretitle">Rank Reveal</font>
-       <br>
-        <font class="featuretext">Want to know how hard your opponents are?<br>Rank reveal shows you everyone in the match's competitive rank.</font>
-      </div>
-    </div>
-      <br>  
-        
-      <div class="div75">
-      <div class="container">
-        <font class="featuretitle">Triggerbot</font>
-        <br>
-        <font class="featuretext">Even with ESP your reaction time is that slow?<br>Don't worry, with triggerbot, shoot the millisecond an enemy walks into your crosshair.</font>
-      </div>
-      <div class="spacer">
-        <p>a</p>
-      </div>
-      <div class="container">
-        <font class="featuretitle">Configs</font>
-        <br>
-        <font class="featuretext">Don't like the hotkeys?, The way the menu is set out?, ESP colour?<br>Jeez you're harsh, change all of that and more with configs.</font>
-      </div>
-    </div>
-      <font class="divtext">Plus more! (aimlock getting recoded)</font>
-    </div>
-  </center>
 </div>
-
-<center>
-<div class="div3" id="screenshots">
-  <font class="divtitle">Screenshots</font>
-  <br>
-  <br>
-<div class="carry">
-  <img class="img" src="https://cdn.discordapp.com/attachments/540386458700087309/540483758676246529/Select_Tonicware_31_01_2019_9_49_03_PM.png" width="480" height="270">
-  <img class="img" src="https://cdn.discordapp.com/attachments/540386458700087309/540483909461344267/Counter-Strike__Global_Offensive_31_01_2019_9_43_57_PM.png" width="480" height="270">
- </div>
-  <br>
-<div class="carry">
-  <img class="img" src="https://cdn.discordapp.com/attachments/540386458700087309/540483910858178570/Counter-Strike__Global_Offensive_31_01_2019_9_44_08_PM.png" width="480" height="270">
-  <img class="img" src="https://cdn.discordapp.com/attachments/540386458700087309/540483962649444353/Counter-Strike__Global_Offensive_31_01_2019_9_44_58_PM.png" width="480" height="270">
-</div>
-  </div>
-</center>
-<center>
-<div class="div4" id="viruscheck">
-  <font class="divtitle">Virus Total</font>
-  <br>
-  <br>
-  <font class="divtext">TonicWare is 100% safe for your computer and here is a virus total to second that</font>
-<br>
-  <br>
-  <a target="_blank" href="https://www.virustotal.com/#/file/d54a95cba7fd2733cce9e3685c479ffdf536c0dd74ec4d59f95896d9cd8141d0/detection"><button class="score"><img class="score" src="https://github.com/tonicware/tonicware-github.com/blob/master/virustotal.PNG?raw=true" width="312px" height="77"></button></a>
-  <br>
-  <font class="divsmall">Note that the two "viruses" are just false positives<br>and are there because TonicWare attaches itself to csgo</font>   
-</div>
-  </center>
-<center>
-<div class="div5" id="download">
-  <font class="divtitle">Download</font><font class="divtitlegreen"> TonicWare</font><font class="divtitle"> On Discord</font>
-  <br>
-  <font class="divsmall">You'll be global elite in no time!</font>
-  <br>
-  <br>
-  <div class="divbutton">
-  <img class="invite left" src="https://github.com/tonicware/tonicware-github.com/blob/master/tonicwarepfp.jpg?raw=true" width="100px" height="100px">
-  <div class="format left">
-  <b><font class="divtext">TonicWare</font></b>
-  </div>
-  <div class="divpadding">
-  <a target="_blank" href="https://discord.gg/7q4Z4Vs"><button class="invitebutton right">Join</button></a>
-    </div>
-  </div>
-</div>
-  </center>
-  <div class="div6" id="tutorial">
-    <font class="divtitle">Tutorial</font>
-    <br>
-    <font class="divtext">Step 1. Download TonicWare3.exe from our discord server (found in #latest-download)<br><br>Step 2 (Optional). Download tconfig.txt and place it in C:\temp, the file can be found in #config of the discord<br><br>Step 3. Run TonicWare3.exe, if csgo is not open then the program will wait for csgo, if csgo is open then it will start<br><br>Step 4. Cheat away! All of the hotkeys are in the menu.</font> 
     
-  </div>
-<center>
-<div class="footer">
-  <font class="footertext">© 2019 TonicWare. All Rights Reserved.</font>
-  </div>
-  </center>
-</body>
+<div class="div1" id="home">
+   <center>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+    <font class="title">TONICWARE</font>
+       <br>
+           <font class="caption">CHEATS REDESIGNED</font>
+       <br>
+       <br>
+       <a href="#info"><button class="learnmore">LEARN MORE</button></a>
+    </center> 
+</div>
 
+<div class="div2">
+    
+    </div>
+    
+<div class="div3">
+    <br>
+    <br>
+    <font class="mediumtitle" id="info">TONICWARE INFO</font>
+    <br>
+    <br>
+    <div class="lineunderline"></div>
+    <br>
+    <br>
+    <font class="smalltitle">TonicWare is an external free cheat made for csgo. With a wide range of features and a great community, TonicWare is the ideal option for any casual cheater. TonicWare is easy to use and setup, with very frequent updates. We beat the competition dead.</font>
+    <br>
+    <br>
+    <br>
+        <font class="mediumtitle" id="features">FEATURE RICH</font>
+    <br>
+    <br>
+    <div class="lineunderline"></div>
+    <br>
+    <br>
+    <font class="smalltitle">We have way more customisability and features than any other external csgo cheats.<br>Here's a list:<br></font>
+    <font class="list"><br>
+        <b>Rage</b>
+        <br>
+• Aimlock
+        <br>
+<br>
+        <b>Legit</b>
+        <br>
+• Glow ESP (Wallhacks)
+        <br>
+• Chams
+        <br>
+• Aim Assist
+        <br>
+• Radar ESP
+        <br>
+• No Recoil
+        <br>
+• Trigger Bot<br><br>
+
+        <b>Misc</b>
+        <br>
+• Bhop
+        <br>
+• No Flash
+        <br>
+• Change Aim Bone (Head and Body)
+        <br>
+• Change Update Time (Optimize for less CPU usage)
+        <br>
+• Health ESP
+        <br>
+• Third Person
+        <br>
+• Clan Tag
+        <br>
+• Hide Name
+    
+    </font>
+    <br>
+    <br>
+    <br>
+    <center>
+    <img src="screenshot1.png" width="640px" height="360px">
+    <br>
+    <br>
+    <img src="screenshot2.png" width="640px" height="360px">
+    <br>
+    <br>
+    <img src="screenshot3.png" width="640px" height="360px">
+    </center>
+      <br>
+    <br>
+    <br>
+        <font class="mediumtitle" id="screenshots">DOWNLOAD ON DISCORD</font>
+    <br>
+    <br>
+    <br>
+    <div class="lineunderline"></div>
+    <br>
+    <br>
+    <a href="https://discord.gg/7q4Z4Vs"><button class="discord" id="download"><img src="tonicware.jpg" width="100" height="100"><img src="discord.png" width="299" height="93.5"></button></a>
+</div>
+
+
+</body>
 </html>
